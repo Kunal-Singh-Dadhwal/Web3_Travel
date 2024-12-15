@@ -5,6 +5,7 @@ struct Route {
     uint256 id;
     string name;
     uint256 distance;
+    string description;
     uint256 timestamp;
     bool deleted;
 }
