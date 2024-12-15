@@ -15,7 +15,7 @@ contract Admin {
     event Action(string ActionType);
 
     mapping (address => bool) isAdmin;
-    mapping (uint256 => bool) routeExists;
+    mapping (uint256 => bool) public routeExists;
     mapping (uint256 => Route) routes;
     mapping (uint256 => mapping(uint256 => address[])) ticketHolders;
 

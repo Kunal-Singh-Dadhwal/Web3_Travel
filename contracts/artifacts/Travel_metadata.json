@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Travel.sol": "Travel"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8ed324d3920bb545059d66ab97d43e43ee85fd3bd52e03e401f020afb0b120f6",
+				"dweb:/ipfs/QmfEckWLmZkDDcoWrkEvMWhms66xwTLff9DDhegYpvHo1a"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+			]
+		},
+		"@openzeppelin/contracts/utils/Counters.sol": {
+			"keccak256": "0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee",
+				"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu"
+			]
+		},
+		"contracts/Admin.sol": {
+			"keccak256": "0x9d7e088d21c01bf548f25481798738f1e7b3cce765ddd0e7c5d83db2e7e7b46f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3db7d0550b03d289b828b8c2bba60720baa39a88170c1c7ed9563b865ce46194",
+				"dweb:/ipfs/QmRJaBjH3p5yxPCTBXEUSnEHDQFovbiTcfA7S4gAzRRLKU"
+			]
+		},
+		"contracts/Structs.sol": {
+			"keccak256": "0x6adf0654c1935adf286de96afdce566081749e73c57cab88f30c2277f61b31b8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://796248e96626f6a1f8a5a3037b113711bdedc9b6c58e2fd0095c9292985a20c3",
+				"dweb:/ipfs/QmUdvJxXNVynJJbWaPouMxJJigJpbJhKoyty1xiXQQ61ie"
+			]
+		},
+		"contracts/Travel.sol": {
+			"keccak256": "0x1733bca8769583e579ed6c61c263e81278d8a2ca40173330ffe31bbb04c5de53",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a61e7cac49e9be78ffecedc62e37e32f02c545f7a169826695414842cc19cd74",
+				"dweb:/ipfs/QmS3xxMBCdi3F4RU2vj6WiW1coqEfxLMeVRUwgvKDa8HPr"
+			]
+		}
+	},
+	"version": 1
+}

@@ -34,11 +34,29 @@
 						"internalType": "string",
 						"name": "description",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "distance",
+						"type": "uint256"
 					}
 				],
 				"name": "addRoute",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -63,17 +81,80 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "routeId",
+						"type": "uint256"
 					}
 				],
-				"name": "isAdmin",
+				"name": "deleteRoute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "routeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "slotId",
+						"type": "uint256"
+					}
+				],
+				"name": "getRouteTicketHolders",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "address[]",
 						"name": "",
-						"type": "bool"
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRoutes",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "distance",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "deleted",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct Route[]",
+						"name": "Routes",
+						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -93,6 +174,52 @@
 					}
 				],
 				"name": "setAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "routeId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "distance",
+						"type": "uint256"
+					}
+				],
+				"name": "updateRoute",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "reciever",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawTo",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -134,19 +261,19 @@
 			]
 		},
 		"contracts/Admin.sol": {
-			"keccak256": "0xce86cb7eef4365508d1e9675aabfc9d689327d8bb330339090dd32bce609ceae",
+			"keccak256": "0x44052c99739db0cd891fda3c1b15bb51ace654ac560de9ca894e46849f43c197",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d12c73f9c06a8e5881e400bc6f73939abbed86a1df96423231c8f8ef6804cbc8",
-				"dweb:/ipfs/QmaTRMiRiZz9jvmia5kdoMiDYDpdDxPjwPGohDVQuBkBxN"
+				"bzz-raw://5624786781af516c4bd262a967fb3b56a69808f0797fa614291b09d092afd416",
+				"dweb:/ipfs/QmU49F4ZgoYc6viBQLv7FAC4wFx3SPHjfGdibxhrut5AYR"
 			]
 		},
 		"contracts/Structs.sol": {
-			"keccak256": "0x1698496dec2cad51aa1b13db01bbb1d2efe45075936607a0e588ae09567bf735",
+			"keccak256": "0x6adf0654c1935adf286de96afdce566081749e73c57cab88f30c2277f61b31b8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1b79f096040239bc9929e596c9adfc39244e5c6ee7e3383fdd2a33b88dea7364",
-				"dweb:/ipfs/QmWMbkLsXCkDb6Tj8j9Kt2FcauR2tR3k5KXz1SsvbbFkFr"
+				"bzz-raw://796248e96626f6a1f8a5a3037b113711bdedc9b6c58e2fd0095c9292985a20c3",
+				"dweb:/ipfs/QmUdvJxXNVynJJbWaPouMxJJigJpbJhKoyty1xiXQQ61ie"
 			]
 		}
 	},
